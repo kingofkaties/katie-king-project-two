@@ -1,0 +1,15 @@
+$primary: #03697C;
+$secondary: #474BB5;
+$accent: #08FDED;
+$dark: #044779;
+$text: #F3FAFF;
+
+body {
+    background-color: $primary;
+}
+
+h1,
+p,
+a {
+    color: $text;
+}

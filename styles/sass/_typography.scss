@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+button {
+    font-family: "Walter Turncoat", Arial, sans-serif;
+}
+
+p,
+nav a {
+    font-family: "Roboto", 'Times New Roman', serif;
+}
+
+h1 {
+    @include toEm(145.2);
+}
+
+h2 {
+    @include toEm(121.5);
+}
+
+h3 {
+    @include toEm(99.8);
+}
+
+h4 {
+    @include toEm(40);
+}
+
+h5 {
+    @include toEm(30);
+}
+
+p,
+nav a {
+    @include toEm(20);
+}
+
+button {
+    @include toEm(41.6);
+}
+
+nav a {
+    letter-spacing: 1px;
+    text-decoration: none;
+}
