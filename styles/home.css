@@ -251,7 +251,8 @@ a {
   color: #F3FAFF;
 }
 
-.icons-flex i {
+.icons-flex i,
+.btn {
   background-color: #08FDED;
 }
 
@@ -259,7 +260,12 @@ a {
   background-color: #474BB5;
 }
 
-.icon-background {
+footer {
+  background-color: #044779;
+}
+
+.icons-flex i,
+.btn {
   color: #474BB5;
 }
 
@@ -267,17 +273,14 @@ h1,
 h2,
 h3,
 h4,
-button {
+button,
+.btn {
   font-family: "Walter Turncoat", Arial, sans-serif;
 }
 
 p,
 nav a {
   font-family: "Roboto", 'Times New Roman', serif;
-}
-
-h1 {
-  font-size: 9.075rem;
 }
 
 h2 {
@@ -307,6 +310,10 @@ button {
 
 nav a {
   letter-spacing: 1px;
+}
+
+.btn,
+nav a {
   text-decoration: none;
 }
 
@@ -315,11 +322,38 @@ nav a {
   margin: 0 auto;
 }
 
+.outer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10px;
+  display: inline-block;
+}
+
 header {
   background-image: url("../assets/home-header.jpg");
   background-size: cover;
   height: 100%;
   position: relative;
+}
+
+header .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+}
+
+header .flex-container .flex-item {
+  border: 1px solid blue;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+header .flex-container .flex-item img {
+  right: 0;
 }
 
 header ul {
@@ -339,14 +373,10 @@ header ul li {
 h1 {
   padding-top: 200px;
   padding-bottom: 100px;
-  max-width: 50%;
 }
 
-header div img {
-  width: 45%;
-  position: absolute;
-  bottom: -100px;
-  right: 0;
+.icon-background {
+  padding: 10px 10px 0 0;
 }
 
 .icons-flex {
@@ -365,14 +395,17 @@ header div img {
   display: -ms-flexbox;
   display: flex;
   padding: 5%;
-  max-width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 
 .icons-flex i {
-  padding: calc((30px - 10px) / 2);
-  border-radius: 50px;
-  min-width: 35px;
-  min-height: 35px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
 }
 
 .about-flex {
@@ -397,5 +430,39 @@ header div img {
 }
 
 .road-trip {
+  text-align: center;
+}
+
+.events--flex {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.events--flex div {
+  border: 1px solid blue;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.gallery--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer {
   text-align: center;
 }

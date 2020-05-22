@@ -1,0 +1,19 @@
+header {
+    background-image: url("../assets/home-header.jpg");
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+
+header .flex-container {
+    display: flex;
+    border: 1px solid red;
+    .flex-item {
+        border: 1px solid blue;
+        flex-basis: 50%;
+        img {
+            right: 0;
+        }
+    }
+}

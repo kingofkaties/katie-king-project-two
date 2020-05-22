@@ -2,7 +2,8 @@ h1,
 h2,
 h3,
 h4,
-button {
+button,
+.btn {
     font-family: "Walter Turncoat", Arial, sans-serif;
 }
 
@@ -12,7 +13,8 @@ nav a {
 }
 
 h1 {
-    @include toEm(145.2);
+    // @include toEm(145.2);
+    font-size: 5rem;
 }
 
 h2 {
@@ -44,5 +46,9 @@ button {
 
 nav a {
     letter-spacing: 1px;
+}
+
+.btn,
+nav a {
     text-decoration: none;
 }

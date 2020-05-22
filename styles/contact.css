@@ -251,7 +251,8 @@ a {
   color: #F3FAFF;
 }
 
-.icons-flex i {
+.icons-flex i,
+.btn {
   background-color: #08FDED;
 }
 
@@ -259,7 +260,12 @@ a {
   background-color: #474BB5;
 }
 
-.icon-background {
+footer {
+  background-color: #044779;
+}
+
+.icons-flex i,
+.btn {
   color: #474BB5;
 }
 
@@ -267,17 +273,14 @@ h1,
 h2,
 h3,
 h4,
-button {
+button,
+.btn {
   font-family: "Walter Turncoat", Arial, sans-serif;
 }
 
 p,
 nav a {
   font-family: "Roboto", 'Times New Roman', serif;
-}
-
-h1 {
-  font-size: 9.075rem;
 }
 
 h2 {
@@ -307,5 +310,9 @@ button {
 
 nav a {
   letter-spacing: 1px;
+}
+
+.btn,
+nav a {
   text-decoration: none;
 }

@@ -16,7 +16,8 @@ a {
     color: $text;
 }
 
-.icons-flex i {
+.icons-flex i,
+.btn {
     background-color: $accent;
 }
 
@@ -24,6 +25,11 @@ a {
     background-color: $secondary;
 }
 
-.icon-background {
+footer {
+    background-color: $dark;
+}
+
+.icons-flex i,
+.btn {
     color: $secondary;
 }
