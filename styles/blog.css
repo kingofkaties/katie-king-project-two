@@ -244,9 +244,23 @@ body {
 }
 
 h1,
+h2,
+h3,
 p,
 a {
   color: #F3FAFF;
+}
+
+.icons-flex i {
+  background-color: #08FDED;
+}
+
+.about {
+  background-color: #474BB5;
+}
+
+.icon-background {
+  color: #474BB5;
 }
 
 h1,
@@ -267,11 +281,11 @@ h1 {
 }
 
 h2 {
-  font-size: 7.59375rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 6.2375rem;
+  font-size: 2.1875rem;
 }
 
 h4 {

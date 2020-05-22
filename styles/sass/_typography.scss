@@ -16,11 +16,13 @@ h1 {
 }
 
 h2 {
-    @include toEm(121.5);
+    // @include toEm(121.5);
+    @include toEm(40);
 }
 
 h3 {
-    @include toEm(99.8);
+    // @include toEm(99.8);
+    @include toEm(35);
 }
 
 h4 {

@@ -9,7 +9,21 @@ body {
 }
 
 h1,
+h2,
+h3,
 p,
 a {
     color: $text;
+}
+
+.icons-flex i {
+    background-color: $accent;
+}
+
+.about {
+    background-color: $secondary;
+}
+
+.icon-background {
+    color: $secondary;
 }
