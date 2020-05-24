@@ -71,7 +71,7 @@ header .inner-wrapper {
 
 .about--img-left {
     img {
-    box-shadow: 15px 15px $accent;
+    box-shadow: 15px 15px 0 -3px $accent;
     transform: translateY(-20px);
 }
 }
@@ -81,7 +81,7 @@ header .inner-wrapper {
     flex-direction: column;
     justify-content: flex-end;
     img {
-        box-shadow: -15px 15px $accent;
+        box-shadow: -15px 15px 0 -3px $accent;
         transform: translateY(20px);
     }
 }
@@ -115,7 +115,7 @@ header .inner-wrapper {
         img {
             -webkit-box-shadow: -15px 15px $accent;
             -moz-box-shadow: -15px 15px $accent;
-            box-shadow: -15px 15px $accent;
+            box-shadow: -15px 15px 0 -3px $accent;
         }
     }
     .events--text {
