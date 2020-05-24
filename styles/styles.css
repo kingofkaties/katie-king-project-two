@@ -499,6 +499,12 @@ h1 {
   padding-bottom: 250px;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .inner-wrapper {
   width: 80%;
   margin: 0 auto;
@@ -720,13 +726,14 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
+  height: 100%;
 }
 
 .blog--flex aside {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  position: relative;
+  top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,7 +742,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  height: 100%;
 }
 
 .blog--flex aside img {
@@ -774,8 +780,8 @@ footer {
 .blog--flex > div {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
+  position: relative;
+  top: -150px;
 }
 
 .article--img {
@@ -854,12 +860,18 @@ footer {
   margin-right: 15px;
 }
 
+.contact .form {
+  position: relative;
+  width: 70%;
+}
+
 .contact form {
   padding: 5%;
+  width: 100%;
   -webkit-box-shadow: 20px 20px 0px -5px #08FDED;
           box-shadow: 20px 20px 0px -5px #08FDED;
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
+  position: absolute;
+  top: -200px;
 }
 
 .contact form input[type=text],

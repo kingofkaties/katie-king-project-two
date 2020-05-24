@@ -19,12 +19,6 @@
         margin-top: 20px;
     }
 
-    // .info {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: flex-start;
-    // }
-
     .icons {
         display: flex;
     }
@@ -33,10 +27,19 @@
         margin-right: 15px;
     }
 
+    .form {
+        position: relative;
+        width: 70%;
+    }
+
     form {
         padding: 5%;
+        width: 100%;
         box-shadow: 20px 20px 0px -5px $accent;
-        transform: translateY(-200px);
+        // transform: translateY(-200px);
+        position: absolute;
+        top: -200px;
+        // left: 30%;
 
         input[type=text],
         input[type=email],
