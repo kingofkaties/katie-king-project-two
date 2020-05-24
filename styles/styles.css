@@ -412,6 +412,37 @@ nav a {
   text-decoration: none;
 }
 
+.inner-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 1200px;
+}
+
+.outer-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn,
+input[type=submit] {
+  padding: 10px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  margin-top: 0;
+}
+
+.btn {
+  margin-top: 30px;
+}
+
+p {
+  padding-top: 15px;
+}
+
 .form--flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,41 +530,14 @@ h1 {
   padding-bottom: 250px;
 }
 
+body {
+  position: relative;
+}
+
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-
-.inner-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px 0;
-  max-width: 1200px;
-}
-
-.outer-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.btn,
-input[type=submit] {
-  padding: 10px;
-  display: inline-block;
-}
-
-input[type=submit] {
-  margin-top: 0;
-}
-
-.btn {
-  margin-top: 30px;
-}
-
-p {
-  padding-top: 15px;
 }
 
 header .inner-wrapper {
@@ -705,31 +709,15 @@ footer {
   text-align: center;
 }
 
+div, section, main, article, aside {
+  border: 1px solid red;
+}
+
 .blog header {
   background-image: url("../assets/blog-header.jpg");
 }
 
-.blog--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.blog--flex aside,
-.blog--flex > div {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  height: 100%;
-}
-
-.blog--flex aside {
+.blog aside {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   position: relative;
@@ -741,50 +729,60 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  height: 100%;
 }
 
-.blog--flex aside img {
+.blog .aside--img {
   -webkit-box-shadow: 20px 20px #474BB5;
           box-shadow: 20px 20px #474BB5;
   width: calc(100% - 20px);
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  position: relative;
 }
 
-.blog--flex aside .aside--text {
+.blog .aside--text {
   padding: 0px 20px 30px 20px;
+  width: 80%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
-.blog--flex aside li:before {
+.blog .aside--text li:before {
   content: "\2022";
   color: #08FDED;
   display: inline-block;
   width: 1rem;
 }
 
-.blog--flex aside div:last-child {
-  width: 80%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.blog--flex aside h4 {
+.blog .aside--text h4 {
   padding: 20px 0;
 }
 
-.blog--flex aside p {
+.blog .aside--text p {
   padding: 0 0 30px 0;
 }
 
-.blog--flex > div {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+.blog article {
+  width: 60%;
+}
+
+.blog .article--relative {
   position: relative;
   top: -150px;
 }
 
-.article--img {
+.blog .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog .article--img {
   -webkit-transform: translateY(-20px) translateX(20px);
           transform: translateY(-20px) translateX(20px);
   -webkit-box-shadow: -25px 26px 0 -5px #08FDED;
@@ -792,17 +790,17 @@ footer {
   width: calc(100% - 20px);
 }
 
-.article--text {
+.blog .article--text {
   border-left: 5px solid #08FDED;
   border-bottom: 5px solid #08FDED;
   padding: 10%;
 }
 
-.comments {
+.blog .article--comments {
   padding: 5% 10%;
 }
 
-.comments .comment {
+.blog .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -811,19 +809,23 @@ footer {
           justify-content: space-between;
 }
 
-.comments .comment :first-child {
+.blog .comment :first-child {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
 }
 
-.comments .comment :last-child {
+.blog .comment :last-child {
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%;
   padding: 30px 0;
 }
 
-.blog form {
+.blog .blog form {
   padding: 0 10%;
+}
+
+.blog footer {
+  position: relative;
 }
 
 .contact header {
