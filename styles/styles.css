@@ -429,6 +429,14 @@ nav a {
 input[type=submit] {
   padding: 10px;
   display: inline-block;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.btn:hover,
+input[type=submit]:hover {
+  background-color: #F3FAFF;
+  color: #044779;
 }
 
 input[type=submit] {
@@ -528,6 +536,14 @@ header ul li {
 h1 {
   padding-top: 50px;
   padding-bottom: 250px;
+}
+
+nav a:hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #08FDED;
 }
 
 body {

@@ -2,10 +2,10 @@
 @import "./global/mixins";
 @import "./global/palette";
 @import "./global/typography";
-@import "./components/wrappers";
-@import "./components/form";
-@import "./components/header";
-@import "./components/footer";
+@import "./global/components";
+@import "./sections/form";
+@import "./sections/header";
+@import "./sections/footer";
 @import "./pages/home";
 @import "./pages/blog";
 @import "./pages/contact";
