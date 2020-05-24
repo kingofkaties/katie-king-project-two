@@ -554,12 +554,8 @@ nav a:hover::after {
   width: 100%;
 }
 
-body {
-  position: relative;
-}
-
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -733,10 +729,6 @@ footer {
   text-align: center;
 }
 
-div, section, main, article, aside {
-  border: 1px solid red;
-}
-
 .blog header {
   background-image: url("../assets/blog-header.jpg");
 }
@@ -846,10 +838,6 @@ div, section, main, article, aside {
 
 .blog .blog form {
   padding: 0 10%;
-}
-
-.blog footer {
-  position: relative;
 }
 
 .contact header {
