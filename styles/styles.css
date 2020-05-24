@@ -294,13 +294,13 @@ a,
   color: #F3FAFF;
 }
 
-.icons-flex i,
+.icons--flex i,
 .btn,
 input[type=submit] {
   background-color: #08FDED;
 }
 
-.about-flex,
+.about--flex,
 .gallery,
 .aside--text {
   background-color: #474BB5;
@@ -310,7 +310,7 @@ footer {
   background-color: #044779;
 }
 
-.icons-flex i,
+.icons--flex i,
 .btn,
 input[type=submit] {
   color: #474BB5;
@@ -328,24 +328,28 @@ input[type=submit] {
 
 p,
 nav a,
+h5,
 ::-webkit-input-placeholder {
   font-family: "Roboto", 'Times New Roman', serif;
 }
 
 p,
 nav a,
+h5,
 :-ms-input-placeholder {
   font-family: "Roboto", 'Times New Roman', serif;
 }
 
 p,
 nav a,
+h5,
 ::-ms-input-placeholder {
   font-family: "Roboto", 'Times New Roman', serif;
 }
 
 p,
 nav a,
+h5,
 ::placeholder {
   font-family: "Roboto", 'Times New Roman', serif;
 }
@@ -408,6 +412,10 @@ input[type=submit] {
   padding: 10px;
   margin-top: 30px;
   display: inline-block;
+}
+
+p {
+  padding-top: 15px;
 }
 
 header {
@@ -505,36 +513,28 @@ header .inner-wrapper {
   padding-bottom: 100px;
 }
 
-p {
-  padding-top: 15px;
-}
-
-.icon-background {
+.icons .icons--background {
   padding: 0 15px;
 }
 
-.icons-flex {
+.icons .icons--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding-top: 10%;
   position: relative;
 }
 
-.header-overlap {
+.icons .header-overlap {
   width: 40%;
   position: absolute;
   right: -12.5%;
   top: -210px;
 }
 
-.text-box {
+.icons .icons--text-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,7 +544,7 @@ p {
   padding-bottom: 40px;
 }
 
-.icons-flex i {
+.icons .icons--flex i {
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -552,7 +552,7 @@ p {
   text-align: center;
 }
 
-.about-flex {
+.about--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,13 +561,12 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
-.about-text-right,
-.about-text-left,
-.about-img-right,
-.about-img-left {
+.about--text-right,
+.about--text-left,
+.about--img-right,
+.about--img-left {
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
   -webkit-box-align: center;
@@ -575,23 +574,23 @@ p {
           align-items: center;
 }
 
-.about-text-right {
+.about--text-right {
   padding: 5% 10% 5% 0;
 }
 
-.about-text-left {
+.about--text-left {
   padding: 5% 0 5% 10%;
   text-align: right;
 }
 
-.about-img-left img {
+.about--img-left img {
   -webkit-box-shadow: 15px 15px #08FDED;
           box-shadow: 15px 15px #08FDED;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-.about-img-right {
+.about--img-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,7 +603,7 @@ p {
           justify-content: flex-end;
 }
 
-.about-img-right img {
+.about--img-right img {
   -webkit-box-shadow: -15px 15px #08FDED;
           box-shadow: -15px 15px #08FDED;
   -webkit-transform: translateY(20px);
@@ -615,7 +614,17 @@ p {
   text-align: center;
 }
 
-.events--flex {
+.road-trip .inner-wrapper {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.events .inner-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.events .events--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,23 +635,28 @@ p {
       flex-wrap: wrap;
 }
 
-.events--img {
+.events .events--img {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   min-width: 150px;
 }
 
-.events--img img {
+.events .events--img img {
   -webkit-box-shadow: -15px 15px #08FDED;
   box-shadow: -15px 15px #08FDED;
 }
 
-.events--text {
+.events .events--text {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
 }
 
-.gallery--flex {
+.gallery .inner-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.gallery .gallery--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,7 +665,7 @@ p {
           justify-content: space-between;
 }
 
-.gallery--flex div {
+.gallery .gallery--flex div {
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
 }
@@ -717,6 +731,8 @@ footer {
 .blog--flex > div {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
 }
 
 .article--img {
@@ -734,7 +750,7 @@ footer {
 }
 
 .blog--comments {
-  padding: 10%;
+  padding: 5% 10% 10% 10%;
 }
 
 .comment {

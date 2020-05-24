@@ -1,6 +1,10 @@
+// HEADER STYLES
+
 .blog header {
     background-image: url("../assets/blog-header.jpg")
 }
+
+// MAIN STYLES
 
 .blog--flex {
     border: 1px solid red;
@@ -34,11 +38,9 @@
     }
     > div {
         flex-basis: 60%;
-        // transform: translateY(-150px);
+        transform: translateY(-150px);
     }
 }
-
-// CAN MAKE BOX-SHADOW GO NEGATIVE!
 
 // .aside--img {
 //     background-color: $secondary;
@@ -59,7 +61,7 @@
 }
 
 .blog--comments {
-    padding: 10%;
+    padding: 5% 10% 10% 10%;
 }
 
 .comment {
