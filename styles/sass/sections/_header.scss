@@ -19,10 +19,16 @@ h1 {
     padding-bottom: 250px;
 }
 
-nav a:hover::after {
+nav a::after {
     content: "";
     display: block;
     height: 2px;
+    width: 0;
+    background: $accent;
+    transition: all 0.5;
+}
+
+nav a:hover::after {
+    transition: all 0.5s;
     width: 100%;
-    background-color: $accent;
 }
