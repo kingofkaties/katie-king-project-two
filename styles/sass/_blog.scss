@@ -7,13 +7,13 @@
 // MAIN STYLES
 
 .blog--flex {
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     flex: 1 0 50%;
     justify-content: space-between;
     aside,
     > div {
-        border: 1px solid blue;
+        // border: 1px solid yellow;
         flex: 0 1 auto;
     }
     aside {
@@ -23,6 +23,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        height: 100%;
         img {
             box-shadow: 20px 20px $secondary;
             width: calc(100% - 20px);
@@ -30,13 +31,29 @@
             // position: absolute;
             transform: translateY(-20px);
         }
+        .aside--text {
+            padding: 0px 20px 30px 20px;
+        }
+        li:before {
+            content: "\2022";
+            color: $accent;
+            display: inline-block;
+            width: 1rem;
+        }
         div:last-child {
             // padding-top: 
-            width: 70%;
+            width: 80%;
             align-self: flex-end;
+        }
+        h4 {
+            padding: 20px 0;
+        }
+        p {
+            padding: 0 0 30px 0;
         }
     }
     > div {
+        // border: 1px solid purple;
         flex-basis: 60%;
         transform: translateY(-150px);
     }
@@ -56,18 +73,30 @@
     border-left: 5px solid $accent;
     border-bottom: 5px solid $accent;
     padding: 10%;
-    // transform: translateY(20px) translateX(-20px);
-
 }
+
+// comments
 
 .blog--comments {
-    padding: 5% 10% 10% 10%;
+    padding: 5% 10%;
+    .comment {
+        // border: 1px solid orange;
+        display: flex;
+        justify-content: space-between;
+        :first-child {
+            flex-basis: 20%;
+        }
+        :last-child {
+            flex-basis: 75%;
+            padding: 30px 0;
+        }
+    }
+    // :last-child {
+    //     padding-top: 40px;
+    // }
+
 }
 
-.comment {
-    border: 1px solid green;
-    display: flex;
-}
 
 form {
     padding: 0 10%;

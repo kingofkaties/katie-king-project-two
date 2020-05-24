@@ -329,28 +329,32 @@ input[type=submit] {
 p,
 nav a,
 h5,
-::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+aside li {
   font-family: "Roboto", 'Times New Roman', serif;
 }
 
 p,
 nav a,
 h5,
-:-ms-input-placeholder {
+:-ms-input-placeholder,
+aside li {
   font-family: "Roboto", 'Times New Roman', serif;
 }
 
 p,
 nav a,
 h5,
-::-ms-input-placeholder {
+::-ms-input-placeholder,
+aside li {
   font-family: "Roboto", 'Times New Roman', serif;
 }
 
 p,
 nav a,
 h5,
-::placeholder {
+::placeholder,
+aside li {
   font-family: "Roboto", 'Times New Roman', serif;
 }
 
@@ -360,6 +364,14 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+.blog h2 {
+  font-size: 3rem;
+}
+
+.blog h4 {
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -375,7 +387,8 @@ h5 {
 }
 
 p,
-nav a {
+nav a,
+aside li {
   font-size: 1rem;
   line-height: 25px;
   letter-spacing: 1px;
@@ -679,7 +692,6 @@ footer {
 }
 
 .blog--flex {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,7 +705,6 @@ footer {
 
 .blog--flex aside,
 .blog--flex > div {
-  border: 1px solid blue;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
@@ -712,6 +723,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  height: 100%;
 }
 
 .blog--flex aside img {
@@ -722,10 +734,29 @@ footer {
           transform: translateY(-20px);
 }
 
+.blog--flex aside .aside--text {
+  padding: 0px 20px 30px 20px;
+}
+
+.blog--flex aside li:before {
+  content: "\2022";
+  color: #08FDED;
+  display: inline-block;
+  width: 1rem;
+}
+
 .blog--flex aside div:last-child {
-  width: 70%;
+  width: 80%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.blog--flex aside h4 {
+  padding: 20px 0;
+}
+
+.blog--flex aside p {
+  padding: 0 0 30px 0;
 }
 
 .blog--flex > div {
@@ -750,16 +781,37 @@ footer {
 }
 
 .blog--comments {
-  padding: 5% 10% 10% 10%;
+  padding: 5% 10%;
 }
 
-.comment {
-  border: 1px solid green;
+.blog--comments .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog--comments .comment :first-child {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.blog--comments .comment :last-child {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  padding: 30px 0;
 }
 
 form {
   padding: 0 10%;
+}
+
+.contact header {
+  background-image: url("../assets/contact-header.jpg");
+}
+
+p {
+  padding: 0;
 }

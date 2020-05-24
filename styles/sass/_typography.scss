@@ -11,7 +11,8 @@ input[type=submit] {
 p,
 nav a,
 h5,
-::placeholder {
+::placeholder,
+aside li {
     font-family: "Roboto", 'Times New Roman', serif;
 }
 
@@ -26,6 +27,14 @@ h2 {
     font-size: 2rem;
 }
 
+.blog h2 {
+    font-size: 3rem;
+}
+
+.blog h4 {
+    font-size: 1.5rem;
+}
+
 h3 {
     // @include toEm(99.8);
     // @include toEm(35);
@@ -38,11 +47,12 @@ h4 {
 
 h5 {
     @include toEm(30);
-    
+
 }
 
 p,
-nav a {
+nav a,
+aside li {
     // @include toEm(20);
     font-size: 1rem;
     // font-size: 1.5vw;
