@@ -1,41 +1,29 @@
-
-
 // HEADER STYLES
 
+header .inner-wrapper {
+    padding: 0;
+}
 
-// header {
-// }
+.home h1 {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
 
-// header .flex-container {
-//     display: flex;
-//     border: 1px solid red;
-//     .flex-item {
-//         border: 1px solid blue;
-//         flex-basis: 50%;
-//         img {
-//             right: 0;
-//         }
-//     }
-// }
-
-
-// header div img {
-//     width: 45%;
-//     position: absolute;
-//     bottom: -100px;
-//     right: 0;
-// }
+p {
+    padding-top: 15px;
+    
+}
 
 // MAIN STYLES
 
 .icon-background {
-    padding: 10px 10px 0 0;
+    padding: 0 15px;
 }
 
 .icons-flex {
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     padding-top: 10%;
     position: relative;
 }
@@ -43,62 +31,64 @@
 .header-overlap {
     width: 40%;
     position: absolute;
-    right: 0;
-    top: 30%;
+    right: -12.5%;
+    top: -210px;
 }
-
 .text-box {
-    border: 1px solid yellow;
     display: flex;
-    padding: 5% 2%;
     flex: 1 0 50%;
+    padding-bottom: 40px;
 }
 
 .icons-flex i {
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
 }
-
-// i::before {
-//     width: 55px;
-//     height: 55px;
-// }
-
-// i::after {
-//     position: absolute;
-//     // top: calc(50% + (35px / 2));
-//     left: 50%;
-//     top: 0;
-//     // top: -10px;
-//     // left: 0;
-//     right: 0;
-//     // background-position: 0 50%;
-//     display: block;
-//     content: '';
-//     height: 30px;
-//     width: 30px;
-//     border-radius: 50%;
-//     background-color: orange;
-//     z-index: 1;
-// }
 
 // about styles
 
 .about-flex {
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
 }
 
-.about-text,
-.about-img {
-    border: 1px solid blue;
-    max-width: 50%;
+.about-text-right,
+.about-text-left,
+.about-img-right,
+.about-img-left {
+    flex-basis: 300px;
     align-items: center;
-    justify-content: center;
+}
+
+.about-text-right {
+    padding: 5% 10% 5% 0;
+
+}
+.about-text-left {
+    padding: 5% 0 5% 10%;
+    text-align: right;
+}
+
+.about-img-left {
+    img {
+    box-shadow: 15px 15px $accent;
+    transform: translateY(-20px);
+}
+}
+
+.about-img-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    img {
+    box-shadow: -15px 15px $accent;
+    transform: translateY(20px);
+}
 }
 
 // road trip styles
@@ -110,16 +100,23 @@
 // events styles
 
 .events--flex {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-basis: 50%;
-    div {
-        border: 1px solid blue;
-        // flex-basis: 50%;
-        flex: 1 1 50%;
+}
+
+.events--img {
+    flex-basis: 25%;
+    min-width: 150px;
+    img {
+        -webkit-box-shadow: -15px 15px $accent;
+        -moz-box-shadow: -15px 15px $accent;
+        box-shadow: -15px 15px $accent;
     }
+}
+
+.events--text {
+    flex-basis: 65%;
 }
 
 // gallery section
@@ -127,6 +124,9 @@
 .gallery--flex {
     display: flex;
     justify-content: space-between;
+    div {
+        flex-basis: 31%;
+    }
 }
 
 // footer

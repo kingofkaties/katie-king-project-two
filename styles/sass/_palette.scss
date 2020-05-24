@@ -4,24 +4,33 @@ $accent: #08FDED;
 $dark: #044779;
 $text: #F3FAFF;
 
-body {
+body,
+input,
+textarea {
     background-color: $primary;
 }
 
 h1,
 h2,
 h3,
+h4,
+h5,
+li,
 p,
-a {
+a,
+::placeholder {
     color: $text;
 }
 
 .icons-flex i,
-.btn {
+.btn,
+input[type=submit] {
     background-color: $accent;
 }
 
-.about {
+.about-flex,
+.gallery,
+.aside--text {
     background-color: $secondary;
 }
 
@@ -30,6 +39,7 @@ footer {
 }
 
 .icons-flex i,
-.btn {
+.btn,
+input[type=submit] {
     color: $secondary;
 }

@@ -3,28 +3,32 @@ h2,
 h3,
 h4,
 button,
-.btn {
+.btn,
+input[type=submit] {
     font-family: "Walter Turncoat", Arial, sans-serif;
 }
 
 p,
-nav a {
+nav a,
+::placeholder {
     font-family: "Roboto", 'Times New Roman', serif;
 }
 
 h1 {
     // @include toEm(145.2);
-    font-size: 5rem;
+    font-size: 6.5rem;
 }
 
 h2 {
     // @include toEm(121.5);
-    @include toEm(40);
+    // @include toEm(40);
+    font-size: 2rem;
 }
 
 h3 {
     // @include toEm(99.8);
-    @include toEm(35);
+    // @include toEm(35);
+    font-size: 1.7rem;
 }
 
 h4 {
@@ -37,7 +41,11 @@ h5 {
 
 p,
 nav a {
-    @include toEm(20);
+    // @include toEm(20);
+    font-size: 1rem;
+    // font-size: 1.5vw;
+    line-height: 25px;
+    letter-spacing: 1px;
 }
 
 button {
