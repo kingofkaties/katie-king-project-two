@@ -2,7 +2,7 @@
 //     // border: 1px solid yellow;
 // }
 
-.form-flex {
+.form--flex {
     // border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
 input[type=text],
 input[type=email] {
     // border: 1px solid blue;
-    flex: 0 1 48%;
+    flex: 1 1 48%;
 }
 
 textarea,

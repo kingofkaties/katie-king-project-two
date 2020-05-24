@@ -1,7 +1,58 @@
-.contact header {
-    background-image: url("../assets/contact-header.jpg")
-}
 
-p {
-    padding: 0;
+.contact {
+    
+    header {
+        background-image: url("../assets/contact-header.jpg")
+    }
+
+    p {
+        padding: 0;
+    }
+
+    .flex {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: space-between;
+    }
+
+    .info div {
+        margin-top: 20px;
+    }
+
+    // .info {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    // }
+
+    .icons {
+        display: flex;
+    }
+    
+    i {
+        margin-right: 15px;
+    }
+
+    form {
+        padding: 5%;
+        box-shadow: 20px 20px $accent;
+        transform: translateY(-200px);
+
+        input[type=text],
+        input[type=email],
+        textarea {
+            background-color: $secondary;
+        }
+        
+        input[type=text],
+        input[type=email] {
+            border-bottom: 2px solid $text;
+        }
+        
+        textarea {
+            border: 2px solid white;
+        }
+
+    }
+
 }

@@ -18,11 +18,12 @@ h5,
 li,
 p,
 a,
-::placeholder {
+::placeholder,
+.contact i {
     color: $text;
 }
 
-.icons--flex i,
+.home i,
 .btn,
 input[type=submit] {
     background-color: $accent;
@@ -30,7 +31,8 @@ input[type=submit] {
 
 .about--flex,
 .gallery,
-.aside--text {
+.aside--text,
+.contact form {
     background-color: $secondary;
 }
 
