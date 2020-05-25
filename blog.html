@@ -17,8 +17,19 @@
             <!-- inner wrapper -->
             <div class="inner-wrapper">
                 <!-- header nav -->
-                <nav>
+                <nav class="nav--toggle">
+                    <label for="toggle"><i class="fas fa-bars"></i> Menu</label>
+                    <input type="checkbox" id="toggle">
                     <ul>
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="About">About</a></li>
+                        <li><a href="Blog">Blog</a></li>
+                        <li><a href="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav--desktop">
+                    </ul>
+                    <ul class="nav--desktop">
                         <li><a href="Home">Home</a></li>
                         <li><a href="About">About</a></li>
                         <li><a href="Blog">Blog</a></li>
@@ -100,11 +111,11 @@
                         <!-- new comment form -->
                         <form action="">
                             <div class="form--flex">
-                                <input type="text" name="" id="first-name" placeholder="Name">
                                 <label for="first-name" class="sr-only">First name
                                 </label>
-                                <input type="email" name="" id="email" placeholder="Email address">
+                                <input type="text" name="" id="first-name" placeholder="Name">
                                 <label for="email" class="sr-only">Email address</label>
+                                <input type="email" name="" id="email" placeholder="Email address">
                             </div>
                             <textarea name="" id="comment" placeholder="Comment" cols="30" rows="10"></textarea>
                             <label class="sr-only" for="comment">Comment</label>

@@ -1,0 +1,79 @@
+@media (max-width: 940px) {
+    
+}
+
+@media (max-width: 768px) {
+
+    // hamburger nav
+
+    header label,
+    header input {
+        display: block;
+        position: relative;
+        padding-top: 50px;
+    }
+    
+    .nav--toggle i {
+        background-color: transparent;
+        color: $accent;
+    }
+
+    .nav--toggle ul {
+        background: $secondary;
+        border-left: 2px solid $accent;
+        text-align: center;
+        position: fixed;
+        z-index: 10;
+        width: 150px;
+        right: -20%;
+        top: 0;
+        height: 100%;
+        transition: all 0.5s;
+        
+        a {
+            display: inline-block;
+            width: 100%;
+            padding: 20px;
+            transition: all 0.5s;
+        }
+        
+    }
+
+    input[type=checkbox]:checked + ul {
+        opacity: 1;
+        right: 0;
+    }
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    label {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        color: white;
+        z-index: 10;
+    }
+
+    // hide desktop nav
+
+    .nav--desktop {
+        display: none;
+    }
+
+    // contact page
+
+    .flex {
+        flex-direction: column;
+        align-items: middle;
+    }
+    
+    form {
+        top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+}

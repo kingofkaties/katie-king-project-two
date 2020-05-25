@@ -12,7 +12,8 @@ p,
 nav a,
 h5,
 ::placeholder,
-aside li {
+aside li,
+header label {
     font-family: "Roboto", 'Times New Roman', serif;
 }
 
@@ -52,7 +53,8 @@ h5 {
 
 p,
 nav a,
-aside li {
+aside li,
+header label {
     // @include toEm(20);
     font-size: 1rem;
     // font-size: 1.5vw;

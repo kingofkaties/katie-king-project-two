@@ -1,5 +1,6 @@
-
 .contact {
+
+    // header
     
     header {
         background-image: url("../assets/contact-header.jpg")
@@ -9,10 +10,18 @@
         padding: 0;
     }
 
+    // main
+
     .flex {
         display: flex;
         flex: 1 0 auto;
         justify-content: space-between;
+    }
+
+    // business info
+
+    .info {
+        width: 25%;
     }
 
     .info div {
@@ -26,6 +35,8 @@
     i {
         margin-right: 15px;
     }
+
+    // contact form
 
     .form {
         position: relative;

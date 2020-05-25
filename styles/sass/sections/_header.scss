@@ -3,32 +3,50 @@ header {
     background-size: cover;
     height: 100%;
     position: relative;
-}
-
-header ul {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 10%;
-    li {
-        margin-left: 4%;
+    
+    h1 {
+        padding-top: 50px;
+        padding-bottom: 250px;
     }
-}
 
-h1 {
-    padding-top: 50px;
-    padding-bottom: 250px;
-}
+    // hamburg nav
 
-nav a::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    background: $accent;
-    transition: all 0.5;
-}
+    label,
+    input {
+        display: none;
+    }
 
-nav a:hover::after {
-    transition: all 0.5s;
-    width: 100%;
+    .nav--toggle ul {
+        opacity: 0;
+    }
+    
+    // desktop nav
+    
+    .nav--desktop ul {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10%;
+        li {
+            margin-left: 4%;
+        }
+    }
+    
+    nav a::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        background: $accent;
+        transition: all 0.5;
+    }
+    
+    nav a:hover::after {
+        transition: all 0.5s;
+        width: 100%;
+    }
+
+    .inner-wrapper {
+        padding-top: 0;
+    }
+    
 }
