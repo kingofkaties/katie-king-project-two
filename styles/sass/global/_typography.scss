@@ -18,17 +18,15 @@ header label {
 }
 
 h1 {
-    // @include toEm(145.2);
     font-size: 6.5rem;
 }
 
 h2 {
-    // @include toEm(121.5);
-    // @include toEm(40);
     font-size: 2rem;
 }
 
-.blog h2 {
+.blog h2,
+header label {
     font-size: 3rem;
 }
 
@@ -37,27 +35,24 @@ h2 {
 }
 
 h3 {
-    // @include toEm(99.8);
-    // @include toEm(35);
     font-size: 1.7rem;
 }
 
 h4 {
-    @include toEm(40);
+    // @include toEm(40);
+    font-size: 1rem;
 }
 
 h5 {
-    @include toEm(30);
-
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 p,
 nav a,
-aside li,
-header label {
-    // @include toEm(20);
+aside li {
     font-size: 1rem;
-    // font-size: 1.5vw;
     line-height: 25px;
     letter-spacing: 1px;
 }

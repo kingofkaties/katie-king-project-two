@@ -34,6 +34,11 @@
     
     i {
         margin-right: 15px;
+        &:hover,
+        &:focus {
+            color: $accent;
+            transition: all 0.5s;
+        }
     }
 
     // contact form
@@ -47,10 +52,8 @@
         padding: 5%;
         width: 100%;
         box-shadow: 20px 20px 0px -5px $accent;
-        // transform: translateY(-200px);
         position: absolute;
         top: -200px;
-        // left: 30%;
 
         input[type=text],
         input[type=email],

@@ -11,6 +11,17 @@
         display: block;
         position: relative;
         padding-top: 50px;
+        right: 60px;
+        position: fixed;
+        text-align: right;
+    }
+
+    header label {
+        z-index: 20;
+    }
+
+    h1 {
+        font-size: 4rem;
     }
     
     .nav--toggle i {
@@ -21,10 +32,11 @@
     .nav--toggle ul {
         background: $secondary;
         border-left: 2px solid $accent;
+        padding-top: 150px;
         text-align: center;
         position: fixed;
         z-index: 10;
-        width: 150px;
+        width: 163px;
         right: -20%;
         top: 0;
         height: 100%;
@@ -62,15 +74,54 @@
         display: none;
     }
 
-    // contact page
+    // INDEX PAGE
+
+    .icons--flex {
+        flex-direction: column;
+    }
+
+    .about--flex {
+        flex-direction: column;
+        div {
+            width: 100%;
+        }
+    }
+
+    .events--flex {
+        flex-direction: column;
+        img {
+            width: 50%;
+        }
+    }
+
+    // CONTACT PAGE
 
     .flex {
         flex-direction: column;
-        align-items: middle;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form {
+        // width: 80%;
     }
     
-    form {
-        top: 0;
+    .contact form {
+        position: static;
+    }
+
+    // BLOG PAGE
+
+    .flex {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 80%;
+        position: relative;
+        top: auto;
+
     }
 }
 

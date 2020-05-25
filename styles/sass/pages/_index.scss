@@ -50,16 +50,19 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        // position: relative;
+        div {
+            width: 40%;
+            align-items: center;
+        }
     }
 
-    .about--text-right,
-    .about--text-left,
-    .about--img-right,
-    .about--img-left {
-        width: 40%;
-        align-items: center;
-    }
+    // .about--text-right,
+    // .about--text-left,
+    // .about--img-right,
+    // .about--img-left {
+    //     width: 40%;
+    //     align-items: center;
+    // }
 
     .about--text-right {
         padding: 5% 10% 5% 0;
