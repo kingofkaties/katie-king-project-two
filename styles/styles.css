@@ -825,7 +825,6 @@ input[type=submit] {
 input[type=submit]:hover,
 input[type=submit]:focus {
   background-color: #F3FAFF;
-  color: #044779;
 }
 
 input[type=submit] {
@@ -919,9 +918,8 @@ footer {
 input[type=text],
 input[type=email] {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  width: 45%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 textarea,
