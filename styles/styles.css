@@ -442,7 +442,7 @@ nav a {
   position: relative;
 }
 
-.home .icons .header-overlap {
+.home .icons .header--overlap {
   width: 40%;
   position: absolute;
   right: -12.5%;
