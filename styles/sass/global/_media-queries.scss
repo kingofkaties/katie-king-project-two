@@ -87,13 +87,29 @@
 
     .about--flex {
         flex-direction: column;
-        div {
-            width: 100%;
+        .about--img-left {
+            width: 80%;
+            align-self: flex-start;
+        }
+        .about--img-right {
+            width: 80%;
+            align-self: flex-end;
+        }
+        .about--text-right,
+        .about--text-left {
+            width: 80%;
+            margin: 0 auto;
         }
     }
 
     .events--flex {
         flex-direction: column;
+        .events--text {
+            margin-top: 50px;
+        }
+        .events--img {
+            align-self: flex-end;
+        }
     }
 
     // CONTACT PAGE
@@ -126,6 +142,7 @@
             width: 80%;
             margin-top: 100px;
         }
+        
 
     }
 

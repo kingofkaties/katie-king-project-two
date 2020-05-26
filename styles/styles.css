@@ -1045,14 +1045,33 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about--flex div {
-    width: 100%;
+  .about--flex .about--img-left {
+    width: 80%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .about--flex .about--img-right {
+    width: 80%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .about--flex .about--text-right,
+  .about--flex .about--text-left {
+    width: 80%;
+    margin: 0 auto;
   }
   .events--flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .events--flex .events--text {
+    margin-top: 50px;
+  }
+  .events--flex .events--img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .flex {
     -webkit-box-orient: vertical;
