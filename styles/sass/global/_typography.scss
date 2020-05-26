@@ -1,8 +1,9 @@
+// font family
+
 h1,
 h2,
 h3,
 h4,
-button,
 .btn,
 input[type=submit] {
     font-family: "Walter Turncoat", Arial, sans-serif;
@@ -17,6 +18,8 @@ header label {
     font-family: "Roboto", 'Times New Roman', serif;
 }
 
+// font size
+
 h1 {
     font-size: 6.5rem;
 }
@@ -30,17 +33,16 @@ header label {
     font-size: 3rem;
 }
 
-.blog h4 {
-    font-size: 1.5rem;
-}
-
 h3 {
     font-size: 1.7rem;
 }
 
 h4 {
-    // @include toEm(40);
     font-size: 1rem;
+}
+
+.blog h4 {
+    font-size: 1.5rem;
 }
 
 h5 {
@@ -55,10 +57,6 @@ aside li {
     font-size: 1rem;
     line-height: 25px;
     letter-spacing: 1px;
-}
-
-button {
-    @include toEm(41.6);
 }
 
 nav a {

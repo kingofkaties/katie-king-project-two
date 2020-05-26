@@ -1,14 +1,12 @@
-// div, section, main, article, aside {
-//     border: 1px solid red;
-// }
-
 .blog {
 
-    // header
+    // HEADER STYLES
 
     header {
         background-image: url("../assets/blog-header.jpg")
     }
+
+    // MAIN STYLES
     
     // aside
     
@@ -32,6 +30,7 @@
         width: 80%;
         align-self: flex-end;
         
+        // style list bullets
         li:before {
             content: "\2022";
             color: $accent;
@@ -54,6 +53,7 @@
         width: 60%;
     }
 
+    // div for help positioning
     .article--relative {
         position: relative;
         top: -150px;

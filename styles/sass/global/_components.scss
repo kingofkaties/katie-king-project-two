@@ -1,3 +1,4 @@
+// helps footer stay at bottom
 
 body {
     display: flex;
@@ -5,9 +6,7 @@ body {
     min-height: 100vh;
 }
 
-footer {
-    flex: 1;
-}
+// skip to main content link
 
 .skip-to-content {
     left: 50%;
@@ -31,7 +30,6 @@ footer {
 .outer-wrapper {
     max-width: 1400px;
     margin: 0 auto;
-    position: relative;
 }
 
 // buttons
@@ -55,7 +53,7 @@ input[type=submit] {
     margin-top: 30px;
 }
 
-// other
+// other spacing
 
 p {
     padding-top: 15px;

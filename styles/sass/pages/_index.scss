@@ -1,4 +1,5 @@
 .home {
+    
     // HEADER STYLES
 
     header .inner-wrapper {
@@ -10,31 +11,36 @@
         padding-bottom: 100px;
     }
 
-
     // MAIN STYLES
 
+    // icons styles
+
     .icons {
+
         .icons--background {
             padding: 0 15px;
         }    
+
         .icons--flex {
             display: flex;
             flex-wrap: wrap;
-            // flex-direction: column;
             padding-top: 10%;
             position: relative;
         }    
+
         .header--overlap {
             width: 40%;
             position: absolute;
             right: -12.5%;
             top: -20vw;
         }
+
         .icons--text-box {
             display: flex;
             flex: 1 0 50%;
             padding-bottom: 40px;
         }    
+
         .icons--flex i {
             border-radius: 50%;
             width: 30px;
@@ -117,7 +123,7 @@
 
     }
 
-    // gallery section
+    // gallery styles
 
     .gallery {
         .inner-wrapper {
@@ -134,23 +140,4 @@
             }
         }
     }
-
-
-    // footer
-
-
-        // MEDIA QUERIES
-
-        @media (max-width: 940px) {
-            
-        }
-
-        @media (max-width: 768px) {
-
-        }
-
-        @media (max-width: 480px) {
-
-        }
-    
 }

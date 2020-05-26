@@ -1,8 +1,6 @@
-@media (max-width: 940px) {
-    
-}
-
 @media (max-width: 810px) {
+
+    // control root size
 
     html {
         font-size: 0.8rem;
@@ -136,7 +134,6 @@
         font-size: 2.5em;
     }
     
-
     // BLOG PAGE
 
     .blog .flex {
@@ -175,12 +172,5 @@
     .gallery div:last-child {
         display: none;
     }
-
-}
-
-
-
-@media (max-width: 480px) {
-
 
 }

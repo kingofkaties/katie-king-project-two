@@ -325,7 +325,6 @@ h1,
 h2,
 h3,
 h4,
-button,
 .btn,
 input[type=submit] {
   font-family: "Walter Turncoat", Arial, sans-serif;
@@ -380,16 +379,16 @@ header label {
   font-size: 3rem;
 }
 
-.blog h4 {
-  font-size: 1.5rem;
-}
-
 h3 {
   font-size: 1.7rem;
 }
 
 h4 {
   font-size: 1rem;
+}
+
+.blog h4 {
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -404,10 +403,6 @@ aside li {
   font-size: 1rem;
   line-height: 25px;
   letter-spacing: 1px;
-}
-
-button {
-  font-size: calc(($pxValue / 16) * 1rem);
 }
 
 nav a {
@@ -782,12 +777,6 @@ body {
   min-height: 100vh;
 }
 
-footer {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
 .skip-to-content {
   left: 50%;
   position: absolute;
@@ -810,7 +799,6 @@ footer {
 .outer-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  position: relative;
 }
 
 .btn,
@@ -898,10 +886,10 @@ header .inner-wrapper {
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
   text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .form--flex {
@@ -969,7 +957,6 @@ textarea {
 .contact form input[type=email]:focus,
 .contact form textarea:focus {
   background-color: #393c90;
-  color: #F3FAFF;
 }
 
 .blog form input[type=text]:focus,
