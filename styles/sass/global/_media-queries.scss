@@ -99,6 +99,7 @@
         .about--text-left {
             width: 80%;
             margin: 0 auto;
+            padding: 10% 0;
         }
     }
 
@@ -130,7 +131,7 @@
     // BLOG PAGE
 
     .blog .flex {
-        flex-direction: column;
+        flex-direction: column-reverse;
         aside,
         article,
         .article--relative {
@@ -139,10 +140,20 @@
         }
         aside,
         article {
-            width: 80%;
+            width: 90%;
             margin-top: 100px;
         }
-        
+        .article--text {
+            border: 5px solid $accent;
+            border: none;
+        }
+        .aside--img {
+            width: 60%;
+            align-self: flex-start;
+        }
+        .aside--text {
+            text-align: right;
+        }
 
     }
 
