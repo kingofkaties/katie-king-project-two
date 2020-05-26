@@ -887,6 +887,7 @@ header nav a::after {
 }
 
 header nav a:hover::after,
+header nav a:focus::after,
 header .current-page::after {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -948,6 +949,7 @@ textarea,
 input[type=text],
 input[type=email] {
   padding: 20px;
+  color: #F3FAFF;
 }
 
 input[type=text],
@@ -968,7 +970,14 @@ textarea {
 .contact form input[type=text]:focus,
 .contact form input[type=email]:focus,
 .contact form textarea:focus {
-  background-color: #044779;
+  background-color: #393c90;
+  color: #F3FAFF;
+}
+
+.blog form input[type=text]:focus,
+.blog form input[type=email]:focus,
+.blog form textarea:focus {
+  background-color: #023f4a;
 }
 
 @media (max-width: 810px) {
@@ -1088,6 +1097,15 @@ textarea {
   .contact form {
     position: static;
     margin-top: 50px;
+  }
+  .info {
+    text-align: center;
+  }
+  .contact .icons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 2.5em;
   }
   .blog .flex {
     -webkit-box-orient: vertical;

@@ -44,6 +44,7 @@ header {
     }
     
     nav a:hover::after,
+    nav a:focus::after,
     .current-page::after {
         transition: all 0.5s;
         width: 100%;

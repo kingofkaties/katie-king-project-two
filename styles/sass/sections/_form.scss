@@ -24,6 +24,7 @@ textarea,
 input[type=text],
 input[type=email] {
     padding: 20px;
+    color: $text;
 }
 
 input[type=text],
@@ -44,5 +45,12 @@ textarea {
 .contact form input[type=text]:focus,
 .contact form input[type=email]:focus,
 .contact form textarea:focus {
-    background-color: $dark;
+    background-color: darken($secondary, 10);
+    color: $text;
+}
+
+.blog form input[type=text]:focus,
+.blog form input[type=email]:focus,
+.blog form textarea:focus {
+    background-color: darken($primary, 10);
 }
