@@ -1,9 +1,5 @@
-// form {
-//     // border: 1px solid yellow;
-// }
 
 .form--flex {
-    // border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -11,7 +7,6 @@
 
 input[type=text],
 input[type=email] {
-    // border: 1px solid blue;
     flex: 1 1 auto;
     width: 45%;
 }
@@ -44,4 +39,10 @@ input[type=submit] {
 textarea {
     border: 2px solid $accent;
     margin: 30px 0;
+}
+
+.contact form input[type=text]:focus,
+.contact form input[type=email]:focus,
+.contact form textarea:focus {
+    background-color: $dark;
 }

@@ -28,7 +28,7 @@
             width: 40%;
             position: absolute;
             right: -12.5%;
-            top: -210px;
+            top: -20vw;
         }
         .icons--text-box {
             display: flex;
@@ -51,18 +51,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         div {
-            width: 40%;
+            flex-basis: 40%;
             align-items: center;
         }
     }
-
-    // .about--text-right,
-    // .about--text-left,
-    // .about--img-right,
-    // .about--img-left {
-    //     width: 40%;
-    //     align-items: center;
-    // }
 
     .about--text-right {
         padding: 5% 10% 5% 0;
@@ -115,10 +107,7 @@
         }
         .events--img {
             flex-basis: 25%;
-            min-width: 150px;
             img {
-                -webkit-box-shadow: -15px 15px $accent;
-                -moz-box-shadow: -15px 15px $accent;
                 box-shadow: -15px 15px 0 -3px $accent;
             }
         }
@@ -139,8 +128,9 @@
         .gallery--flex {
             display: flex;
             justify-content: space-between;
+            margin: 0 calc(auto - 3%);
             div {
-                flex-basis: 31%;
+                margin: 0 1.5%;
             }
         }
     }

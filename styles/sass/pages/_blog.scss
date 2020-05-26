@@ -63,6 +63,7 @@
         display: flex;
         flex: 1 0 50%;
         justify-content: space-between;
+        flex-direction: row;
     }
 
     .article--img {
@@ -82,6 +83,7 @@
     .article--comments {
         padding: 5% 10%;
     }
+    
     .comment {
         display: flex;
         justify-content: space-between;

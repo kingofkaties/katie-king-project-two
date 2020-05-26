@@ -2,7 +2,11 @@
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
+
+    html {
+        font-size: 0.8rem;
+    }
 
     // hamburger nav
 
@@ -21,7 +25,7 @@
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     
     .nav--toggle i {
@@ -52,6 +56,7 @@
     }
 
     input[type=checkbox]:checked + ul {
+        display: block;
         opacity: 1;
         right: 0;
     }
@@ -89,9 +94,6 @@
 
     .events--flex {
         flex-direction: column;
-        img {
-            width: 50%;
-        }
     }
 
     // CONTACT PAGE
@@ -102,29 +104,46 @@
         width: 100%;
         margin: 0 auto;
     }
-
-    .form {
-        // width: 80%;
-    }
     
     .contact form {
         position: static;
+        margin-top: 50px;
     }
+    
 
     // BLOG PAGE
 
-    .flex {
+    .blog .flex {
         flex-direction: column;
+        aside,
+        article,
+        .article--relative {
+            position: relative;
+            top: 0;
+        }
+        aside,
+        article {
+            width: 80%;
+            margin-top: 100px;
+        }
+
     }
 
-    aside {
-        width: 80%;
-        position: relative;
-        top: auto;
-
+    .blog footer {
+        margin-top: 50px;
     }
+
+    // gallery
+
+    .gallery div:last-child {
+        display: none;
+    }
+
 }
 
+
+
 @media (max-width: 480px) {
+
 
 }

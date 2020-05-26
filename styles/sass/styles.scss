@@ -2,11 +2,11 @@
 @import "./global/mixins";
 @import "./global/palette";
 @import "./global/typography";
-@import "./global/components";
-@import "./sections/form";
-@import "./sections/header";
-@import "./sections/footer";
 @import "./pages/index";
 @import "./pages/blog";
 @import "./pages/contact";
+@import "./global/components";
+@import "./sections/header";
+@import "./sections/footer";
+@import "./sections/form";
 @import "./global/media-queries";

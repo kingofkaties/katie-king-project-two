@@ -21,7 +21,7 @@
     // business info
 
     .info {
-        width: 25%;
+        flex-basis: 25%;
     }
 
     .info div {
@@ -32,7 +32,7 @@
         display: flex;
     }
     
-    i {
+    .icons i {
         margin-right: 15px;
         &:hover,
         &:focus {
@@ -45,7 +45,7 @@
 
     .form {
         position: relative;
-        width: 70%;
+        flex-basis: 70%;
     }
 
     form {

@@ -16,21 +16,24 @@
         <header>
         <!-- inner wrapper -->
             <div class="inner-wrapper">
-                <!-- header nav -->
+                <!-- skip to content (hidden) -->
+                <a href="#icons" class="skip-to-content">Skip to main content</a>
+                <!-- mobile nav -->
                 <nav class="nav--toggle">
                     <label for="toggle"><i class="fas fa-bars"></i></label>
                     <label for="toggle" class="sr-only">Menu</label>
                     <input type="checkbox" id="toggle">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html" class="current-page">Home</a></li>
                         <li><a href="./index.html#about">About</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- desktop nav -->
                 <nav class="nav--desktop">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html" class="current-page">Home</a></li>
                         <li><a href="./index.html#about">About</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
@@ -44,7 +47,7 @@
         <!-- MAIN BEGINS -->
         
         <main>
-            <section class="icons">
+            <section class="icons" id="icons">
                 <!-- header overlay img -->
                 <div class="inner-wrapper icons--flex">
                     <div class="header-overlap outer-wrapper">

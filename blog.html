@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/61079c5be7.js" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap"
-    rel="stylesheet">
     <title>Blog</title>
 </head>
 <body class="blog">
@@ -16,7 +17,9 @@
         <header>
             <!-- inner wrapper -->
             <div class="inner-wrapper">
-                <!-- header nav -->
+                <!-- skip to content (hidden) -->
+                <a href="#aside" class="skip-to-content">Skip to main content</a>
+                <!-- mobile nav -->
                 <nav class="nav--toggle">
                     <label for="toggle"><i class="fas fa-bars"></i></label>
                     <label for="toggle" class="sr-only">Menu</label>
@@ -24,16 +27,17 @@
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./index.html#about">About</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./blog.html" class="current-page">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- desktop nav -->
                 <nav class="nav--desktop">
                     </ul>
                     <ul class="nav--desktop">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./index.html#about">About</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./blog.html" class="current-page">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -49,7 +53,7 @@
                 <!-- aside -->
                 <aside>
                     <!-- aside img -->
-                    <div class="aside--img">
+                    <div class="aside--img" id="aside">
                         <img src="./assets/blog-side-image.jpg" alt="Two kids with a big box of colourful chalk">
                     </div>
                     <!-- aside text -->
